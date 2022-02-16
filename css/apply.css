@@ -1,0 +1,207 @@
+* {
+  box-sizing: border-box;
+  font-size: 1.3rem;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  /* background: rgb(184, 247, 247); */
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-image: url("../img/images\ \(34\).jpeg");
+  background-size: 15%;
+}
+
+.backdrop-report {
+  position: fixed;
+  height: 100vh;
+  width: 100vw;
+  top: 0;
+  left: 0;
+  background-color: black;
+  opacity: 0.5;
+  z-index: -1;
+}
+
+/* Login form */
+
+.container-login {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+/* .container-login-form > * {
+  background: white;
+} */
+
+.container-login-form {
+  display: flex;
+  flex-direction: column;
+  padding: 2rem 1rem;
+  margin: 0.5rem 1rem;
+  /* border: 1px solid black; */
+  /* background: white; */
+}
+
+.container-login-form > * {
+  margin-bottom: 1rem;
+}
+
+.container-login-form > h1 {
+  text-align: center;
+  margin-bottom: 0.5rem;
+  color: white;
+  font-size: 2rem;
+}
+
+label {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1rem;
+  /* background: white; */
+}
+
+.radio {
+  display: block;
+}
+
+.radio > input {
+  cursor: pointer;
+}
+
+label > small {
+  color: red;
+  font-style: italic;
+  /* display: none; */
+  background: white;
+}
+
+label > input {
+  padding: 0.5rem 1rem;
+  outline: none;
+  color: black;
+  background: white;
+}
+
+label > input:focus {
+  border: 1px solid blue;
+}
+
+.form-decisions {
+  display: flex;
+  justify-content: center;
+}
+
+.form-decisions > button {
+  padding: 0.3rem 0.5rem;
+  margin: 0 0.5rem;
+  border-radius: 0.5rem;
+  border: none;
+  color: white;
+}
+
+.reset {
+  background: rgb(255, 120, 120);
+  transition: 0.5s ease-in;
+}
+
+/* .reset:hover,
+  .reset:active {
+    background: red;
+    cursor: pointer;
+  } */
+
+.submit {
+  background: rgb(115, 255, 115);
+  transition: 0.5s ease-in;
+}
+
+/* .submit:hover,
+  .submit:active {
+    background: green;
+    cursor: pointer;
+  } */
+
+.radio > p {
+  background: white;
+}
+
+label > textarea {
+  resize: none;
+  padding: 0.5rem;
+  background-color: white;
+  outline: none;
+  color: black;
+}
+
+label > textarea:focus {
+  border: 1px solid blue;
+}
+
+/* Table */
+
+.container-table {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+caption {
+  font-size: 1.3rem;
+  font-weight: bold;
+  border: 0.2rem solid black;
+}
+
+table * {
+  background-color: white;
+}
+table {
+  background-color: white;
+  margin-top: 2rem;
+  border: 0.2rem solid black;
+}
+
+.search > button {
+  padding: 0.2rem 0.5rem;
+  background: rgb(11, 179, 11);
+  border: none;
+  border-radius: 0.5rem;
+  color: white;
+}
+
+.search > input {
+  padding: 0.3rem 0.5rem;
+}
+
+.report {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 5rem;
+}
+
+.report > h1 {
+  color: white;
+  margin-bottom: 2rem;
+  font-size: 3rem;
+}
+
+.report > h3 {
+  margin-top: 2rem;
+  color: white;
+  font-size: 3rem;
+}
+
+i {
+  font-size: 2rem;
+}
+
+header > a {
+  color: white;
+}
+
+.container-apply {
+  background-color: none !important;
+}

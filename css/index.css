@@ -1,0 +1,208 @@
+* {
+  box-sizing: border-box;
+  font-size: 1.3rem;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+/* background color: rgb(184, 247, 247) */
+
+.backdrop-index {
+  position: fixed;
+  height: 100vh;
+  width: 100vw;
+  top: 0;
+  left: 0;
+  background-color: black;
+  opacity: 0.5;
+  z-index: -1;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.5rem 1rem;
+  position: fixed;
+  top: 0;
+  right: 0;
+  /* border-bottom: 0.2rem solid black; */
+  width: 100%;
+  /* background-color: rgb(184, 247, 247); */
+  z-index: 1000;
+}
+
+.company-logo {
+  display: flex;
+  align-items: center;
+}
+
+.company-logo > h3 {
+  color: white;
+}
+
+.logo {
+  height: 5rem;
+  border-radius: 5rem;
+  border: 0.1rem solid black;
+  margin-right: 0.5rem;
+}
+
+ul {
+  display: flex;
+  align-items: center;
+  list-style: none;
+  padding-inline-start: 0;
+  padding: 1rem 0rem;
+}
+
+li {
+  display: flex;
+  align-content: center;
+  padding: 0 1rem;
+}
+
+li > a {
+  text-decoration: none;
+  cursor: pointer;
+  transition: 0.1s;
+  color: white;
+  height: 60%;
+}
+
+li > a:hover,
+li > a:active {
+  border-bottom: 0.2rem solid white;
+  color: blue;
+}
+
+.search > button {
+  padding: 0.2rem 0.5rem;
+  background: rgb(11, 179, 11);
+  border: none;
+  border-radius: 0.5rem;
+  color: white;
+  cursor: pointer;
+}
+
+.search > input {
+  padding: 0.3rem 0.5rem;
+}
+
+.logout {
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+  /* background: rgb(255, 110, 110); */
+  background: black;
+  cursor: pointer;
+  /* border: 0.1rem solid rgb(255, 110, 110); */
+  color: white;
+}
+
+.logout:hover,
+.logout:active {
+  background: red;
+  border-color: red;
+}
+
+/* Main container */
+
+.main-container_search {
+  position: absolute;
+  left: 70%;
+  top: 25%;
+  /* justify-content: flex-end;
+  margin-top: 1rem; */
+}
+
+.main-container_assets {
+  display: flex;
+  /* grid-auto-rows: auto; */
+  flex-direction: row;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  margin-top: 15rem;
+}
+
+.main-container_assets > h3 {
+  font-size: 3rem;
+  border-bottom: 0.5rem solid white;
+  position: absolute;
+  top: 25%;
+  left: 5%;
+  color: white;
+}
+
+.main-container_assets > h2 {
+  font-size: 3rem;
+  /* border-bottom: 0.5rem solid black; */
+  position: absolute;
+  top: 40%;
+  left: 5%;
+}
+
+.assets {
+  display: flex;
+  flex-direction: column;
+  word-wrap: normal;
+  margin-top: 5rem;
+  padding: 0.5rem 1rem;
+  background: white;
+  box-shadow: 0.1rem 0.1rem 0.1rem 0.1rem gray;
+  margin-right: 2rem;
+  margin-bottom: 2rem;
+  cursor: pointer;
+  transition: 0.1s ease-in;
+}
+
+.assets:hover,
+.assets:active {
+  box-shadow: 0.3rem 0.3rem 0.3rem 0.3rem blue;
+}
+
+img {
+  height: 10rem;
+}
+
+.driver-img {
+  width: 100%;
+}
+
+.actions {
+  margin-top: 1rem;
+}
+
+.update {
+  background-color: rgb(115, 255, 115);
+  transition: 0.5s ease-in;
+  padding: 0.2rem 0.5rem;
+  border: none;
+  border-radius: 0.5rem;
+  cursor: pointer;
+}
+
+.update:hover,
+.update:active {
+  background: green;
+}
+
+.delete:hover,
+.delete:active {
+  background: red;
+}
+
+.delete {
+  background: rgb(255, 120, 120);
+  transition: 0.5s ease-in;
+  padding: 0.2rem 0.5rem;
+  border: none;
+  border-radius: 0.5rem;
+  cursor: pointer;
+}
+
+.results {
+  position: absolute;
+  top: 25%;
+  left: 10%;
+}

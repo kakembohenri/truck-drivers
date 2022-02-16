@@ -1,0 +1,162 @@
+* {
+  box-sizing: border-box;
+  font-size: 1.3rem;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+
+  margin: 0;
+  padding: 0;
+}
+
+/* Login form */
+
+body {
+  background-image: url("../img/truck.jpeg");
+  background-size: 10%;
+}
+
+.backdrop-login {
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: black;
+  height: 100vh;
+  width: 100vw;
+  opacity: 0.6;
+  z-index: -1;
+}
+
+.invalid {
+  color: white;
+  text-align: center;
+}
+
+.container-login {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+/* .container-login-form > * {
+  background: white;
+} */
+
+.container-login-form {
+  display: flex;
+  flex-direction: column;
+  padding: 2rem 1rem;
+  margin: 0.5rem 1rem;
+  /* border: 1px solid black; */
+  /* background: white; */
+}
+
+.container-login-form > * {
+  margin-bottom: 1rem;
+}
+
+.container-login-form > h1 {
+  text-align: center;
+  margin-bottom: 0.5rem;
+  color: white;
+}
+
+label {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1rem;
+  /* background: white; */
+}
+
+.white {
+  color: white;
+}
+
+label > small {
+  color: red;
+  font-style: italic;
+  /* display: none; */
+  background: rgb(247, 136, 136);
+}
+
+label > input {
+  padding: 0.5rem 1rem;
+  outline: none;
+  color: white;
+  background: none;
+  border: 0.2rem solid white;
+}
+
+label > input:focus {
+  border: 1px solid white;
+}
+
+.form-decisions {
+  display: flex;
+  justify-content: center;
+}
+
+.form-decisions > button {
+  padding: 0.3rem 0.5rem;
+  margin: 0 0.5rem;
+  border-radius: 0.5rem;
+  border: none;
+  color: white;
+}
+
+.reset {
+  background: rgb(255, 120, 120);
+  transition: 0.5s ease-in;
+}
+
+/* .reset:hover,
+.reset:active {
+  background: red;
+  cursor: pointer;
+} */
+
+.submit {
+  background: rgb(115, 255, 115);
+  transition: 0.5s ease-in;
+}
+
+/* .submit:hover,
+.submit:active {
+  background: green;
+  cursor: pointer;
+} */
+
+/* fForgot password */
+
+.forgot {
+  color: white;
+}
+
+.forgot::after {
+  position: absolute;
+  display: flex;
+  width: 25%;
+  background: rgb(255, 120, 120);
+  bottom: 20%;
+  content: "Please contact the system administrator to recover your password";
+  transition: 0.5s ease-out;
+  padding: 0.5rem 1rem;
+  transform: scale(0);
+  color: white;
+}
+
+.forgot:hover::after {
+  transform: scale(1);
+}
+
+/* Upload button */
+
+.upload {
+  cursor: pointer;
+  width: 50%;
+  transition: 0.5s ease-in;
+}
+
+.upload:hover {
+  border: 0.1rem solid blue;
+  background-color: cyan;
+}
